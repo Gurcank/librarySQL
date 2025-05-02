@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gbInformation = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbClass = new System.Windows.Forms.ComboBox();
+            this.cbGender = new System.Windows.Forms.ComboBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.txtStudentID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,24 +43,25 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gbSearch = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbTransactions = new System.Windows.Forms.GroupBox();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.dgwStudent = new System.Windows.Forms.DataGridView();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.gbInformation.SuspendLayout();
             this.gbSearch.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gbTransactions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwStudent)).BeginInit();
             this.SuspendLayout();
             // 
             // gbInformation
             // 
-            this.gbInformation.Controls.Add(this.comboBox2);
-            this.gbInformation.Controls.Add(this.comboBox1);
-            this.gbInformation.Controls.Add(this.textBox1);
+            this.gbInformation.Controls.Add(this.cbClass);
+            this.gbInformation.Controls.Add(this.cbGender);
+            this.gbInformation.Controls.Add(this.txtPhone);
             this.gbInformation.Controls.Add(this.txtSurname);
             this.gbInformation.Controls.Add(this.txtStudentID);
             this.gbInformation.Controls.Add(this.label4);
@@ -71,47 +73,47 @@
             this.gbInformation.Controls.Add(this.label1);
             this.gbInformation.Location = new System.Drawing.Point(13, 13);
             this.gbInformation.Name = "gbInformation";
-            this.gbInformation.Size = new System.Drawing.Size(593, 137);
+            this.gbInformation.Size = new System.Drawing.Size(607, 137);
             this.gbInformation.TabIndex = 0;
             this.gbInformation.TabStop = false;
             this.gbInformation.Text = "Information Entry";
             // 
-            // comboBox2
+            // cbClass
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbClass.FormattingEnabled = true;
+            this.cbClass.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4"});
-            this.comboBox2.Location = new System.Drawing.Point(83, 84);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(115, 24);
-            this.comboBox2.TabIndex = 2;
+            this.cbClass.Location = new System.Drawing.Point(83, 84);
+            this.cbClass.Name = "cbClass";
+            this.cbClass.Size = new System.Drawing.Size(115, 24);
+            this.cbClass.TabIndex = 2;
             // 
-            // comboBox1
+            // cbGender
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbGender.FormattingEnabled = true;
+            this.cbGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(276, 84);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(115, 24);
-            this.comboBox1.TabIndex = 2;
+            this.cbGender.Location = new System.Drawing.Point(276, 84);
+            this.cbGender.Name = "cbGender";
+            this.cbGender.Size = new System.Drawing.Size(115, 24);
+            this.cbGender.TabIndex = 2;
             // 
-            // textBox1
+            // txtPhone
             // 
-            this.textBox1.Location = new System.Drawing.Point(486, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(101, 22);
-            this.textBox1.TabIndex = 1;
+            this.txtPhone.Location = new System.Drawing.Point(486, 88);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(114, 22);
+            this.txtPhone.TabIndex = 1;
             // 
             // txtSurname
             // 
             this.txtSurname.Location = new System.Drawing.Point(486, 31);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(101, 22);
+            this.txtSurname.Size = new System.Drawing.Size(114, 22);
             this.txtSurname.TabIndex = 1;
             // 
             // txtStudentID
@@ -184,7 +186,7 @@
             // 
             // gbSearch
             // 
-            this.gbSearch.Controls.Add(this.textBox2);
+            this.gbSearch.Controls.Add(this.txtSearch);
             this.gbSearch.Controls.Add(this.label7);
             this.gbSearch.Location = new System.Drawing.Point(13, 157);
             this.gbSearch.Name = "gbSearch";
@@ -193,12 +195,12 @@
             this.gbSearch.TabStop = false;
             this.gbSearch.Text = "Search";
             // 
-            // textBox2
+            // txtSearch
             // 
-            this.textBox2.Location = new System.Drawing.Point(113, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(151, 22);
-            this.textBox2.TabIndex = 1;
+            this.txtSearch.Location = new System.Drawing.Point(113, 25);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(151, 22);
+            this.txtSearch.TabIndex = 1;
             // 
             // label7
             // 
@@ -209,21 +211,21 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Search Student:";
             // 
-            // groupBox1
+            // gbTransactions
             // 
-            this.groupBox1.Controls.Add(this.btnEdit);
-            this.groupBox1.Controls.Add(this.btnDelete);
-            this.groupBox1.Controls.Add(this.btnSave);
-            this.groupBox1.Location = new System.Drawing.Point(290, 157);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(316, 67);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Transactions";
+            this.gbTransactions.Controls.Add(this.btnEdit);
+            this.gbTransactions.Controls.Add(this.btnDelete);
+            this.gbTransactions.Controls.Add(this.btnAdd);
+            this.gbTransactions.Location = new System.Drawing.Point(290, 157);
+            this.gbTransactions.Name = "gbTransactions";
+            this.gbTransactions.Size = new System.Drawing.Size(330, 67);
+            this.gbTransactions.TabIndex = 2;
+            this.gbTransactions.TabStop = false;
+            this.gbTransactions.Text = "Transactions";
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(208, 20);
+            this.btnEdit.Location = new System.Drawing.Point(228, 20);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(95, 41);
             this.btnEdit.TabIndex = 0;
@@ -232,51 +234,53 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(107, 20);
+            this.btnDelete.Location = new System.Drawing.Point(117, 20);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(95, 41);
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // btnSave
+            // btnAdd
             // 
-            this.btnSave.Location = new System.Drawing.Point(6, 20);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(95, 41);
-            this.btnSave.TabIndex = 0;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(6, 20);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(95, 41);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // dataGridView1
+            // dgwStudent
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 231);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(593, 260);
-            this.dataGridView1.TabIndex = 3;
+            this.dgwStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwStudent.Location = new System.Drawing.Point(13, 231);
+            this.dgwStudent.Name = "dgwStudent";
+            this.dgwStudent.RowHeadersWidth = 51;
+            this.dgwStudent.RowTemplate.Height = 24;
+            this.dgwStudent.Size = new System.Drawing.Size(607, 260);
+            this.dgwStudent.TabIndex = 3;
             // 
             // studentTransactions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 503);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(632, 503);
+            this.Controls.Add(this.dgwStudent);
+            this.Controls.Add(this.gbTransactions);
             this.Controls.Add(this.gbSearch);
             this.Controls.Add(this.gbInformation);
             this.Name = "studentTransactions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "studentTransactions";
+            this.Text = "Student Transactions";
             this.Load += new System.EventHandler(this.studentTransactions_Load);
             this.gbInformation.ResumeLayout(false);
             this.gbInformation.PerformLayout();
             this.gbSearch.ResumeLayout(false);
             this.gbSearch.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.gbTransactions.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgwStudent)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -293,16 +297,17 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbGender;
+        private System.Windows.Forms.ComboBox cbClass;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.GroupBox gbSearch;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbTransactions;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.DataGridView dgwStudent;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
