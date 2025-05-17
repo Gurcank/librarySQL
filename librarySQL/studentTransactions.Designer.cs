@@ -201,6 +201,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(151, 22);
             this.txtSearch.TabIndex = 1;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // label7
             // 
@@ -231,6 +232,7 @@
             this.btnEdit.TabIndex = 0;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
@@ -261,6 +263,7 @@
             this.dgwStudent.RowTemplate.Height = 24;
             this.dgwStudent.Size = new System.Drawing.Size(607, 260);
             this.dgwStudent.TabIndex = 3;
+            this.dgwStudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwStudent_CellClick);
             // 
             // studentTransactions
             // 

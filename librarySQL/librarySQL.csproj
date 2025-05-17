@@ -120,6 +120,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LibraryDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="loanBookTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loanBookTransactions.Designer.cs">
+      <DependentUpon>loanBookTransactions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="studentTransactions.cs">
@@ -128,11 +134,20 @@
     <Compile Include="studentTransactions.Designer.cs">
       <DependentUpon>studentTransactions.cs</DependentUpon>
     </Compile>
+    <Compile Include="typeTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="typeTransactions.Designer.cs">
+      <DependentUpon>typeTransactions.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="bookTransactions.resx">
       <DependentUpon>bookTransactions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loanBookTransactions.resx">
+      <DependentUpon>loanBookTransactions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -145,6 +160,9 @@
     </Compile>
     <EmbeddedResource Include="studentTransactions.resx">
       <DependentUpon>studentTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="typeTransactions.resx">
+      <DependentUpon>typeTransactions.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="LibraryDataSet.xsc">
       <DependentUpon>LibraryDataSet.xsd</DependentUpon>

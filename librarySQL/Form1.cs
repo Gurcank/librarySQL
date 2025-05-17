@@ -18,7 +18,6 @@ namespace librarySQL
             InitializeComponent();
         }
 
-        SqlConnection connection = new SqlConnection(@"Data Source=GURCAN;Initial Catalog=Library;Integrated Security=True");
         private void frmHomePage_Load(object sender, EventArgs e)
         {
            

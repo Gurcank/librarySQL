@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtBookID = new System.Windows.Forms.TextBox();
-            this.txtWriter = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtPublisher = new System.Windows.Forms.TextBox();
             this.txtPage = new System.Windows.Forms.TextBox();
-            this.dgwBook = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
+            this.txtPublisher = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtWriter = new System.Windows.Forms.TextBox();
+            this.txtBookID = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dgwBook = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -72,6 +72,86 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Information Entry";
             // 
+            // txtPage
+            // 
+            this.txtPage.Location = new System.Drawing.Point(501, 62);
+            this.txtPage.Name = "txtPage";
+            this.txtPage.Size = new System.Drawing.Size(100, 22);
+            this.txtPage.TabIndex = 8;
+            // 
+            // txtPublisher
+            // 
+            this.txtPublisher.Location = new System.Drawing.Point(303, 97);
+            this.txtPublisher.Name = "txtPublisher";
+            this.txtPublisher.Size = new System.Drawing.Size(139, 22);
+            this.txtPublisher.TabIndex = 7;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(303, 33);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(139, 22);
+            this.txtName.TabIndex = 6;
+            // 
+            // txtWriter
+            // 
+            this.txtWriter.Location = new System.Drawing.Point(70, 97);
+            this.txtWriter.Name = "txtWriter";
+            this.txtWriter.Size = new System.Drawing.Size(139, 22);
+            this.txtWriter.TabIndex = 5;
+            // 
+            // txtBookID
+            // 
+            this.txtBookID.Location = new System.Drawing.Point(70, 33);
+            this.txtBookID.Name = "txtBookID";
+            this.txtBookID.Size = new System.Drawing.Size(139, 22);
+            this.txtBookID.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(385, 68);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 16);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Number Of Page:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(215, 103);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 16);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Publisher:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(215, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Book Name:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Writer:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Book ID:";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnEdit);
@@ -84,122 +164,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Transactions";
             // 
-            // groupBox3
+            // btnEdit
             // 
-            this.groupBox3.Controls.Add(this.txtSearch);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(12, 162);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(232, 63);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Search";
+            this.btnEdit.Location = new System.Drawing.Point(254, 21);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(109, 36);
+            this.btnEdit.TabIndex = 0;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // label1
+            // btnDelete
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Book ID:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Writer:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(215, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Book Name:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(215, 103);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 16);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Publisher:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(385, 68);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Number Of Page:";
-            // 
-            // txtBookID
-            // 
-            this.txtBookID.Location = new System.Drawing.Point(70, 33);
-            this.txtBookID.Name = "txtBookID";
-            this.txtBookID.Size = new System.Drawing.Size(139, 22);
-            this.txtBookID.TabIndex = 5;
-            // 
-            // txtWriter
-            // 
-            this.txtWriter.Location = new System.Drawing.Point(70, 97);
-            this.txtWriter.Name = "txtWriter";
-            this.txtWriter.Size = new System.Drawing.Size(139, 22);
-            this.txtWriter.TabIndex = 5;
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(303, 33);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(139, 22);
-            this.txtName.TabIndex = 6;
-            // 
-            // txtPublisher
-            // 
-            this.txtPublisher.Location = new System.Drawing.Point(303, 97);
-            this.txtPublisher.Name = "txtPublisher";
-            this.txtPublisher.Size = new System.Drawing.Size(139, 22);
-            this.txtPublisher.TabIndex = 7;
-            // 
-            // txtPage
-            // 
-            this.txtPage.Location = new System.Drawing.Point(501, 62);
-            this.txtPage.Name = "txtPage";
-            this.txtPage.Size = new System.Drawing.Size(100, 22);
-            this.txtPage.TabIndex = 8;
-            // 
-            // dgwBook
-            // 
-            this.dgwBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwBook.Location = new System.Drawing.Point(12, 231);
-            this.dgwBook.Name = "dgwBook";
-            this.dgwBook.RowHeadersWidth = 51;
-            this.dgwBook.RowTemplate.Height = 24;
-            this.dgwBook.Size = new System.Drawing.Size(608, 260);
-            this.dgwBook.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 28);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 16);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Search Book";
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(98, 25);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(128, 22);
-            this.txtSearch.TabIndex = 1;
+            this.btnDelete.Location = new System.Drawing.Point(130, 21);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(109, 36);
+            this.btnDelete.TabIndex = 0;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
@@ -211,23 +194,44 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnDelete
+            // groupBox3
             // 
-            this.btnDelete.Location = new System.Drawing.Point(130, 21);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(109, 36);
-            this.btnDelete.TabIndex = 0;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.groupBox3.Controls.Add(this.txtSearch);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Location = new System.Drawing.Point(12, 162);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(232, 63);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Search";
             // 
-            // btnEdit
+            // txtSearch
             // 
-            this.btnEdit.Location = new System.Drawing.Point(254, 21);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(109, 36);
-            this.btnEdit.TabIndex = 0;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.txtSearch.Location = new System.Drawing.Point(98, 25);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(128, 22);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 28);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 16);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Search Book";
+            // 
+            // dgwBook
+            // 
+            this.dgwBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwBook.Location = new System.Drawing.Point(12, 231);
+            this.dgwBook.Name = "dgwBook";
+            this.dgwBook.RowHeadersWidth = 51;
+            this.dgwBook.RowTemplate.Height = 24;
+            this.dgwBook.Size = new System.Drawing.Size(608, 260);
+            this.dgwBook.TabIndex = 4;
+            this.dgwBook.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwBook_CellClick);
             // 
             // bookTransactions
             // 
